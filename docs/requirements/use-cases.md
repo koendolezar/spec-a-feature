@@ -1475,7 +1475,7 @@ Details:
 
 **Extensions:**
 - **1a. Actor is not authorized to deactivate this student:**
-  - 1a1. The actor is not the course admin who owns the student's course, is not an instructor assigned to the student's course section, or is attempting to deactivate her own student account.
+  - 1a1. The actor is not authorized under BR-student-lifecycle, including an instructor not assigned to the student's course section, a course admin who does not own the student's course, or an attempt to deactivate her own student account.
   - 1a2. The system denies the operation and leaves the student's account and team assignment unchanged.
 - **3a. Student is already deactivated:**
   - 3a1. The system informs the course admin or instructor that the student is already deactivated and makes no change.
