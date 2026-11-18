@@ -1475,10 +1475,12 @@ Details:
 **Extensions:**
 **Priority:** Low
 **Frequency of Use:** Rare. Occurs occasionally when a student withdraws from a course section.
-**Business Rules:** BR-student-lifecycle
+**Business Rules:** BR-student-lifecycle, BR-team-admin-only
 
 **Associated Information:**
-- Consequence of the deactivation: The student will no longer be able to log in or submit weekly activity reports and peer evaluations, but the student's account and her previously submitted work are kept in the system. Deactivation will NOT remove the student from the system, and the account can be reactivated in the future (UC-STU-reactivate-student: Reactivate a student). This is distinct from deletion (UC-STU-delete-student: Delete a student), which is a physical, unrecoverable delete. The course admin or instructor shall be able to cancel the use case at any time prior to submitting it.
+- The confirmation warning identifies that deactivation preserves the student's account and submitted work while removing her from any assigned team (BR-student-lifecycle). This is distinct from deletion (UC-STU-delete-student: Delete a student).
+- The student is not automatically assigned to her former team if her account is later reactivated (UC-STU-reactivate-student: Reactivate a student; BR-team-admin-only).
+- The course admin or instructor shall be able to cancel the use case at any time prior to submitting it.
 
 **Related Use Cases:** UC-STU-delete-student: Delete a student; UC-STU-reactivate-student: Reactivate a student
 **Assumptions:**
@@ -1516,6 +1518,7 @@ Details:
 **Business Rules:** BR-student-lifecycle
 
 **Associated Information:**
+- Reactivating the account does not restore team membership removed during deactivation; a course admin must assign the student to a team again (BR-team-admin-only).
 - The course admin or instructor shall be able to cancel the use case at any time prior to submitting it.
 
 **Related Use Cases:** UC-STU-delete-student: Delete a student; UC-STU-deactivate-student: Deactivate a student
