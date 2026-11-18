@@ -48,6 +48,7 @@ Each Level-2 doc covers exactly one UC area and is named after that area's lower
 
 | File | Area | Scope |
 |------|------|-------|
+| `stu.md` | STU | student lifecycle |
 | `tpl.md` | TPL | templates / team-document provisioning |
 | `glo.md` | GLO | glossary |
 | `doc.md` | DOC | requirement documents (sections, locking) |
