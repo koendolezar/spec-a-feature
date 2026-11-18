@@ -220,7 +220,7 @@ Authorship metadata (FR-HIS-authorship-metadata) is in scope for the initial rel
 
 **FR-NOT-suppress-routine (Ubiquitous):** The system shall not raise persistent (in-app) notifications for routine authoring changes (creating, editing, or deleting glossary terms, requirement artifacts, artifact links, document sections, use cases, and comments), and shall suppress their email per CI-no-routine-email; such changes are propagated to connected collaborators in real time per the real-time collaboration model (UC-COL-collaborative-edit) instead. _(Part of FEAT-collaboration.)_
 
-**FR-NOT-weekly-reminder (Event-Driven):** On a course section's configured weekly due day for weekly activity reports or peer evaluations, the system shall email each student in that course section a submission reminder listing the item(s) due that day and their due times, delivered through the Gmail SMTP integration. The reminder job runs only for course sections eligible for reminders in the current week and may be disabled by configuration. _(Part of FEAT-performance-tracking.)_
+**FR-NOT-weekly-reminder (Event-Driven):** On a course section's configured weekly due day for weekly activity reports or peer evaluations, the system shall email each active student assigned to a team in that course section a submission reminder listing the item(s) due that day and their due times, delivered through the Gmail SMTP integration. The reminder job runs only for course sections eligible for reminders in the current week and may be disabled by configuration. _(Part of FEAT-performance-tracking; per BR-non-submitter-status.)_
 
 # **Business Rules**
 
